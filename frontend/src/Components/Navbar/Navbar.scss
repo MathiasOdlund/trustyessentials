@@ -1,6 +1,6 @@
 //Importing some fonts
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Kumbh+Sans:wght@300;400;700&family=Passion+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alatsi&family=Kumbh+Sans:wght@300;400;700&family=Passion+One&display=swap");
 * {
 }
 nav {
@@ -36,12 +36,54 @@ nav {
       a {
         font-size: 19px;
         color: #292929;
-        
-        font-family: 'Alatsi', sans-serif;
+
+        font-family: "Alatsi", sans-serif;
         font-weight: 400;
         text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.12);
         &:hover {
           text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+//Phone edition
+@media only screen and (max-width: 600px) {
+  nav {
+    .navlinks {
+      visibility: hidden;
+    }
+  }
+}
+//ipads ish
+@media only screen and (max-width: 1155px) {
+  nav {
+    .navlinks {
+      width: 25%;
+    }
+  }
+}
+@media only screen and (max-width: 956px) {
+  nav {
+    .navlinks {
+      width: 30%;
+    }
+  }
+}
+@media only screen and (max-width: 956px) {
+  nav {
+    .logo {
+      top: 3.2%;
+      h1 {
+        font-size: 20px;
+      }
+    }
+    .navlinks {
+      width: 35%;
+      li {
+        a {
+          font: 10px;
         }
       }
     }

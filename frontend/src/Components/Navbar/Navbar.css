@@ -39,12 +39,45 @@ nav .navlinks {
 nav .navlinks li a {
   font-size: 19px;
   color: #292929;
-  font-family: 'Alatsi', sans-serif;
+  font-family: "Alatsi", sans-serif;
   font-weight: 400;
   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.12);
 }
 
 nav .navlinks li a:hover {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .navlinks {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 1155px) {
+  nav .navlinks {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 956px) {
+  nav .navlinks {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 956px) {
+  nav .logo {
+    top: 3.2%;
+  }
+  nav .logo h1 {
+    font-size: 20px;
+  }
+  nav .navlinks {
+    width: 35%;
+  }
+  nav .navlinks li a {
+    font: 10px;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */
