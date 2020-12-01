@@ -11,10 +11,12 @@ export default class Home extends Component {
         <Navbar />
         <div className="phoneImage">
           <div className="explore">
-          <h1>Affordable Reliable Flawless</h1>
-          <button type="button" class="btn btn-dark btn-primary">
-            EXPLORE
-          </button>
+            <h1>Affordable Reliable Flawless</h1>
+            <a href="/explore">
+              <button type="button" class="btn btn-dark btn-primary">
+                EXPLORE
+              </button>
+            </a>
           </div>
           <img src={phoneImage} alt="hy" />
         </div>

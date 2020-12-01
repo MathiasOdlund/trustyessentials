@@ -3,9 +3,20 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;600&display=swap");
-nav .search-bar {
+nav .user p {
   position: absolute;
   right: 5%;
+  top: 3%;
+  font-family: "Alatsi", sans-serif;
+}
+
+nav .user p:hover {
+  cursor: pointer;
+}
+
+nav .search-bar {
+  position: absolute;
+  right: 10%;
   top: 2.4%;
 }
 

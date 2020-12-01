@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Navbar.css";
-
+//searchbar
 var searchBox = document.querySelectorAll(
   '.search-box input[type="text"] + span'
 );
@@ -10,7 +10,34 @@ searchBox.forEach((elm) => {
     elm.previousElementSibling.value = "";
   });
 });
+//login
+export function initNetlifyIdentity() {
+  console.log("initnetlyifidntity");
+  const script = document.createElement("script");
+  script.src = "https://identity.netlify.com/v1/netlify-identity-widget.js";
+  script.async = true;
+  document.body.appendChild(script);
+}
+function openNetlifyModal() {
+  const netlifyIdentity = window.netlifyIdentity;
 
+  if (netlifyIdentity) {
+    netlifyIdentity.open();
+  } else {
+    console.log("netlifyidentity not defined :(");
+  }
+}
+class NetlifyIdentity extends Component {
+  componentDidMount() {
+    initNetlifyIdentity();
+  }
+
+  render() {
+    return <div></div>;
+  }
+}
+
+initNetlifyIdentity();
 export default class Navbar extends Component {
   render() {
     return (
@@ -41,6 +68,16 @@ export default class Navbar extends Component {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="user">
+            <p
+              onClick={() => {
+                openNetlifyModal();
+              }}
+              id="login-button"
+            >
+              Sign In
+            </p>
           </div>
         </nav>
       </div>
