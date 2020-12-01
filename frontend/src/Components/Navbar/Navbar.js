@@ -1,5 +1,11 @@
 import React, { Component } from "react";
+import netlifyIdentity from "netlify-identity-widget";
 import "./Navbar.css";
+//sleep
+const sleep = (milliseconds) => {
+  return new Promise((resolve) => setTimeout(resolve, milliseconds));
+};
+
 //searchbar
 var searchBox = document.querySelectorAll(
   '.search-box input[type="text"] + span'
@@ -11,33 +17,15 @@ searchBox.forEach((elm) => {
   });
 });
 //login
-export function initNetlifyIdentity() {
-  console.log("initnetlyifidntity");
-  const script = document.createElement("script");
-  script.src = "https://identity.netlify.com/v1/netlify-identity-widget.js";
-  script.async = true;
-  document.body.appendChild(script);
-}
+netlifyIdentity.init();
 function openNetlifyModal() {
-  const netlifyIdentity = window.netlifyIdentity;
-
-  if (netlifyIdentity) {
-    netlifyIdentity.open();
-  } else {
-    console.log("netlifyidentity not defined :(");
-  }
+  sleep(2000);
+  netlifyIdentity.open();
 }
-class NetlifyIdentity extends Component {
-  componentDidMount() {
-    initNetlifyIdentity();
-  }
+netlifyIdentity.on("login", () => {
+  window.location.href = "/profile";
+});
 
-  render() {
-    return <div></div>;
-  }
-}
-
-initNetlifyIdentity();
 export default class Navbar extends Component {
   render() {
     return (
@@ -55,8 +43,9 @@ export default class Navbar extends Component {
             <li>
               <a href="/products">Products</a>
             </li>
+
             <li>
-              <a href="/about">About Us</a>
+              <a href="/about">About</a>
             </li>
             <div className="shoppingcart"></div>
           </div>

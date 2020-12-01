@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Alatsi&family=Kumbh+Sans:wght@300;400;700&family=Passion+One&display=swap");
+.greeting {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.greeting h1 {
+  font-family: "Alatsi", sans-serif;
+  font-size: 20px;
+}
+
+.greeting .orders img {
+  height: 100px;
+}
+/*# sourceMappingURL=Profile.css.map */
