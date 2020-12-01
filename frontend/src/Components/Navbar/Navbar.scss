@@ -1,0 +1,49 @@
+//Importing some fonts
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Kumbh+Sans:wght@300;400;700&family=Passion+One&display=swap');
+* {
+}
+nav {
+  .logo {
+    position: absolute;
+    top: 2.4%;
+    left: 5%;
+    a {
+      &:hover {
+        text-decoration: none !important;
+      }
+    }
+    h1 {
+      color: #292929;
+      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.12);
+      font-family: "Raleway", sans-serif;
+      font-weight: 900;
+      font-size: 30px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .navlinks {
+    display: flex;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    width: 18%;
+    justify-content: space-around;
+    transform: translateX(-50%);
+    li {
+      a {
+        font-size: 19px;
+        color: #292929;
+        
+        font-family: 'Alatsi', sans-serif;
+        font-weight: 400;
+        text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.12);
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

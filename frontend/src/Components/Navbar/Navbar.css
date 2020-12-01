@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alatsi&family=Kumbh+Sans:wght@300;400;700&family=Passion+One&display=swap");
+nav .logo {
+  position: absolute;
+  top: 2.4%;
+  left: 5%;
+}
+
+nav .logo a:hover {
+  text-decoration: none !important;
+}
+
+nav .logo h1 {
+  color: #292929;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.12);
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+nav .logo h1:hover {
+  cursor: pointer;
+}
+
+nav .navlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  width: 18%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+nav .navlinks li a {
+  font-size: 19px;
+  color: #292929;
+  font-family: 'Alatsi', sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+nav .navlinks li a:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=Navbar.css.map */
