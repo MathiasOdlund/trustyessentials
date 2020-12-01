@@ -1,5 +1,16 @@
 import React, { Component } from "react";
 import "./Navbar.css";
+
+var searchBox = document.querySelectorAll(
+  '.search-box input[type="text"] + span'
+);
+
+searchBox.forEach((elm) => {
+  elm.addEventListener("click", () => {
+    elm.previousElementSibling.value = "";
+  });
+});
+
 export default class Navbar extends Component {
   render() {
     return (
@@ -21,6 +32,15 @@ export default class Navbar extends Component {
               <a href="/about">About Us</a>
             </li>
             <div className="shoppingcart"></div>
+          </div>
+          <div className="search-bar">
+            <div class="flexbox">
+              <div class="search">
+                <div>
+                  <input type="text" placeholder="Search . . ." required />
+                </div>
+              </div>
+            </div>
           </div>
         </nav>
       </div>

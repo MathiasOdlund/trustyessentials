@@ -1,0 +1,18 @@
+.product-search {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+
+.product-search .active-cyan input.form-control[type="text"] {
+  border-bottom: 1px solid #000000 !important;
+  -webkit-box-shadow: 0 1px 0 0 #000303 !important;
+          box-shadow: 0 1px 0 0 #000303 !important;
+}
+
+.product-search input {
+  width: 60% !important;
+  border: 3px solid black;
+  padding: 20px !important;
+}
+/*# sourceMappingURL=Search.css.map */
