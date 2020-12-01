@@ -76,7 +76,7 @@ export default class Navbar extends Component {
               }}
               id="login-button"
             >
-              Sign In
+              Account
             </p>
           </div>
         </nav>
